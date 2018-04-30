@@ -3,56 +3,20 @@
 API callback for update transaction.
 
 ## base url:
-  - Development `https://api-dev.julofinance.com`
+  - Development `https://api-dev.julofinance.com` 
   - Staging `https://api-staging.julofinance.com`
   - Production `https://api.julofinance.com`
+  
+## IP:
+  - Development `52.220.237.20` 
+  - Staging `13.228.4.68`
+  - Production `13.229.235.68`
 
-## list api:
+## list ur api:
 
 | METHOD | URL | DESCRIPTION |
 | ------ | ------ | ------ |
-| POST | `base_url`/api/partner/v1/auth/login | get Token for Authentication |
 | POST | `base_url`/api/partner/v1/sepulsa/transaction | update transaction |
-
----
-
-# Get Token
-
-authentication API JULO need token, get token with username and password.
-
-## Requirments:
-
-| Field | Type | Validate |
-| ------ | ------ | ------ |
-| username | String | Mandatory  |
-| password | String | Mandatory  |
-
-## data:
-
-```javascript
-{
-  'username' : {{username}},
-  'password' : {{password}}
-}
-```
-
-## response success:
-```javascript
-//STATUS CODE 200
-{
-  'token' : token, 
-}
-```
-
-## response validate failed (example)
-```javascript
-//STATUS CODE 400
-{
-  'password' : [
-        'This field is required.'
-    ]
-}
-```
 
 ---
 
@@ -63,7 +27,6 @@ API for update transaction success or failed.
 
 | Field | Type | Validate |
 | ------ | ------ | ------ |
-| token | String | Mandatory  |
 | transaction_id | String | Mandatory  |
 | order_id | Integer | Mandatory  |
 | customer_number | String | Mandatory  |
@@ -73,14 +36,6 @@ API for update transaction success or failed.
 | status | String | Mandatory  |
 | serial_number | String | Mandatory  |
 
-## Headers:
-
-```javascript
-{
-  'Authorization' : Token {{token}},
-  'Content-Type' : application/json
-}
-```
 
 ## data:
 
