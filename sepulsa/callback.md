@@ -16,7 +16,7 @@ API callback for update transaction.
 
 | METHOD | URL | DESCRIPTION |
 | ------ | ------ | ------ |
-| POST | `base_url`/api/partner/v1/sepulsa/transaction | update transaction |
+| POST | `base_url`/api/integration/v1/callbacks/sepulsa/transaction | update transaction |
 
 ---
 
