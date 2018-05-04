@@ -8,9 +8,9 @@ API callback for update transaction.
   - Production `https://api.julofinance.com`
   
 ## IP:
-  - Development `52.220.237.20` 
+  - Production `52.220.237.20` 
   - Staging `13.228.4.68`
-  - Production `13.229.235.68`
+  - Development `13.229.235.68`
 
 ## list ur api:
 
