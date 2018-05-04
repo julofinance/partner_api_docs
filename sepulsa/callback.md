@@ -57,7 +57,6 @@ API for update transaction success or failed.
 ```javascript
 //STATUS CODE 200
 {
-  'status' : true,
   'message' : 'Update transaction success.',
   'data' : {
       'response_code': '00',
@@ -77,7 +76,6 @@ API for update transaction success or failed.
 ```javascript
 //STATUS CODE 400
 {
-  'status' : false,
   'message' : "Order id not found!.",
   'data' : {
       'response_code': '00',
